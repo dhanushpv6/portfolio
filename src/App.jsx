@@ -16,44 +16,43 @@ const translations = {
   hero: {
     greeting: 'Hallo, ich bin',
     title: 'Dhanush',
-    subtitle: 'Masterstudent für Artificial Intelligence und Robotik in Deutschland mit mehr als 3 Jahren Backend-Erfahrung (Java, Spring Boot). Ich baue KI-Systeme, die nachweisen können, dass sie richtig liegen: LLM-/RAG-Anwendungen, Agenten und Evaluation.',
+    subtitle: 'Masterstudent für Artificial Intelligence und Robotik in Deutschland mit Berufserfahrung in RAG, Agenten und LLM-Evaluation. Ich baue KI-Systeme, die nachweisen können, dass sie richtig liegen: LLM-/RAG-Anwendungen, Agenten und Evaluation.',
     cta: 'Kontaktieren Sie mich'
   },
 
   about: {
     title: 'Wer bin ich?',
-    content: 'Hallo, ich bin Dhanush und studiere derzeit Artificial Intelligence und Robotik in Deutschland.\n\nMein Schwerpunkt liegt auf angewandter KI: Dokumenten-KI, Retrieval/RAG, LLM-Agenten und deren Evaluation. Dabei setze ich auf Python, FastAPI, PostgreSQL und messbare Qualität statt reiner Demos.\n\nMeine Backend-Erfahrung (Java, Spring Boot, Kafka, PostgreSQL) hilft mir, KI-Anwendungen zuverlässig, getestet und nachvollziehbar zu bauen.',
+    content: 'Hallo, ich bin Dhanush und studiere derzeit Artificial Intelligence und Robotik in Deutschland.\n\nMein Schwerpunkt liegt auf angewandter KI: Dokumenten-KI, Retrieval/RAG, LLM-Agenten und deren Evaluation. Dabei setze ich auf Python, FastAPI, PostgreSQL und messbare Qualität statt reiner Demos.\n\nMeine Berufserfahrung mit RAG-Systemen und LLM-Agenten hilft mir, KI-Anwendungen zuverlässig, getestet und nachvollziehbar zu bauen.',
     button: 'Mehr über mich'
   },
 
   experience: {
     title: 'Berufserfahrung',
-    description: 'Mehr als 3 Jahre Erfahrung in der Entwicklung von Java- und Spring-Boot-Backends und ereignisgesteuerten Systemen mit Schwerpunkt auf Performance, Sicherheit und zuverlässiger Auslieferung.',
+    description: 'Praxiserfahrung im Aufbau von RAG-Systemen, LLM-Agenten und Evaluations-Pipelines mit Python, FastAPI und Cloud-Plattformen.',
     download: 'Lebenslauf herunterladen',
     jobs: [
       {
-        title: "Software Engineer",
-        company: "Jeeves Information Systems (Forterro)",
-        duration: "06/2023 - 01/2025",
+        title: 'AI Engineer',
+        company: 'Jeeves Information Systems (Forterro)',
+        duration: '06/2023 - 01/2025',
         points: [
-          "Entwickelte Kafka-basierte Event-Ingestion-Pipelines mit Consumer-Retries und Dead-Letter-Queues, sodass fehlgeschlagene Events die Verarbeitung nicht blockieren, und verkürzte die Kunden-Einführungszeit um rund 40 %.",
-          "Definierte gRPC- und Protocol-Buffers-Verträge zwischen Spring-Boot-Services und kombinierte Kafka-Topics mit AWS SQS/SNS für zuverlässige asynchrone Kommunikation.",
-          "Konzipierte ein entkoppeltes Backend aus unabhängig deploybaren Spring-Boot-Microservices mit Eureka für Service Discovery und einem API Gateway für einheitliches Routing.",
-          "Entwickelte eine Elasticsearch-Indexierungspipeline, die mit PostgreSQL synchron gehalten wird, optimierte Analyzer, Mappings und Relevanz-Ranking und verwaltete Shards und Reindexing.",
-          "Senkte die Antwortzeiten von Reporting-Endpunkten von rund 2 Sekunden auf 300 ms durch Query-Tuning, Redis-Caching und HikariCP-Pooling und ergänzte Rate Limiting pro API-Key mit Redis und Bucket4j.",
-          "Etablierte Code-Review-Standards im Team, betreute Nachwuchsentwickler durch Reviews und Pair Programming und analysierte JVM-Services mit Datadog APM und JFR, um Verarbeitungsengpässe zu beseitigen."
+          'Konzeption und Betrieb produktiver RAG-Plattformen für Enterprise-Wissenssuche mit Foundation-Modellen, pgvector oder Pinecone und LLM-Orchestrierungs-Frameworks.',
+          'Aufbau von Multi-Agenten-Workflows mit LangGraph, inklusive Planner-, Retriever- und Validator-Agenten, Zustandsverwaltung, Tool Calling und Human-in-the-Loop-Kontrollen.',
+          'Integration der Evaluation in die GitHub-Actions-CI mit Qualitätsschwellen für Faithfulness, Relevanz und Zitatabdeckung.',
+          'Umsetzung von Responsible-AI-Kontrollen: Schutz vor Prompt Injection, PII-Schutz, Halluzinationsminderung und Audit-Logging.',
+          'Einführung von LLM-Telemetrie, Modellwechsel und Kostenkontrolle sowie Deployment von KI-Diensten in der Cloud.'
         ]
       },
       {
-        title: "Associate Software Engineer",
-        company: "Jeeves Information Systems (Forterro)",
-        duration: "05/2022 - 06/2023",
+        title: 'Associate AI Engineer',
+        company: 'Jeeves Information Systems (Forterro)',
+        duration: '05/2022 - 06/2023',
         points: [
-          "Entwickelte REST-APIs mit Spring Boot und Hibernate/JPA auf Basis von MySQL und PostgreSQL in einer Microservices-Umgebung und ergänzte Eingabevalidierung, zentrale Fehlerbehandlung und standardisierte API-Antworten.",
-          "Verbesserte die Backend-Performance durch SQL-Query-Tuning, Indizierung und Redis-Caching und reduzierte die API-Latenz bei stark genutzten Endpunkten um rund 30 %.",
-          "Sicherte Services mit Spring Security und JWT ab und setzte rollenbasierte Zugriffskontrolle für Administratoren, Benutzer und Partner um.",
-          "Schrieb Unit- und Integrationstests mit JUnit 5 und Mockito, einschließlich Embedded-Kafka-Tests, und behob SonarQube- und Checkmarx-Findings, um Qualitäts- und Sicherheitsprüfungen stabil zu bestehen.",
-          "Analysierte Produktionsfehler, identifizierte Ursachen und lieferte Korrekturen mit Präventionsmaßnahmen; unterstützte Docker- und Kubernetes-Deployments über Jenkins-CI/CD-Pipelines in agilen Scrum-Teams."
+          'Entwicklung einer RAG-Anwendung zur Beantwortung natürlichsprachlicher Fragen über hochgeladene PDF- und Word-Dokumente, mit quellenbasierten Antworten, die jede Aussage mit ihrer Belegstelle verknüpfen.',
+          'Umsetzung von Dokument-Chunking, Embeddings und semantischer Ähnlichkeitssuche mit den Vektorspeichern ChromaDB und FAISS.',
+          'Kombination von BM25-Keyword-Suche und Vektorsuche sowie Cross-Encoder-Reranking zur Verbesserung der Relevanz der gefundenen Abschnitte.',
+          'Entwicklung konfigurierbarer Prompt-Templates und Parsing strukturierter LLM-Ausgaben mit den OpenAI-APIs.',
+          'Entwicklung automatisierter Evaluatoren und eines LLM-as-a-Judge-Frameworks zur Bewertung von Faithfulness und Relevanz generierter Antworten.'
         ]
       }
     ]
@@ -155,44 +154,43 @@ const translations = {
   hero: {
     greeting: 'Hello, I am',
     title: 'Dhanush',
-    subtitle: 'Master’s student in Artificial Intelligence and Robotics in Germany with 3+ years of backend engineering experience (Java, Spring Boot). I build AI systems that can prove they’re right: LLM and RAG applications, agents and evaluation.',
+    subtitle: 'Master’s student in Artificial Intelligence and Robotics in Germany with professional experience in RAG, agents and LLM evaluation. I build AI systems that can prove they’re right: LLM and RAG applications, agents and evaluation.',
     cta: 'Contact Me'
   },
 
   about: {
     title: 'Who am I?',
-    content: 'Hi, I’m Dhanush, currently pursuing a Master’s in Artificial Intelligence and Robotics in Germany.\n\nMy focus is applied AI: document AI, retrieval and RAG, LLM agents and their evaluation, built with Python, FastAPI and PostgreSQL, with measured quality rather than just demos.\n\nMy backend engineering background (Java, Spring Boot, Kafka, PostgreSQL) helps me build AI applications that are reliable, tested and traceable.',
+    content: 'Hi, I’m Dhanush, currently pursuing a Master’s in Artificial Intelligence and Robotics in Germany.\n\nMy focus is applied AI: document AI, retrieval and RAG, LLM agents and their evaluation, built with Python, FastAPI and PostgreSQL, with measured quality rather than just demos.\n\nMy professional experience with RAG systems and LLM agents helps me build AI applications that are reliable, tested and traceable.',
     button: 'More About Me'
   },
 
   experience: {
     title: 'Professional Experience',
-    description: '3+ years of experience building Java and Spring Boot backends and event-driven systems, with a focus on performance, security and reliable delivery.',
+    description: 'Hands-on experience building RAG systems, LLM agents and evaluation pipelines with Python, FastAPI and cloud platforms.',
     download: 'Download Resume',
     jobs: [
       {
-        title: "Software Engineer",
-        company: "Jeeves Information Systems (Forterro)",
-        duration: "06/2023 - 01/2025",
+        title: 'AI Engineer',
+        company: 'Jeeves Information Systems (Forterro)',
+        duration: '06/2023 - 01/2025',
         points: [
-          "Built Kafka-based event ingestion pipelines with consumer retries and dead-letter queues so failed events never block processing, reducing client onboarding time by roughly 40%.",
-          "Defined gRPC and Protocol Buffers contracts between Spring Boot services, combining Kafka topics with AWS SQS/SNS for reliable asynchronous communication.",
-          "Designed a decoupled backend of independently deployable Spring Boot microservices, using Eureka for service discovery and an API Gateway for unified routing.",
-          "Built an Elasticsearch indexing pipeline synchronised with PostgreSQL, tuning analyzers, mappings and relevance ranking and handling shards and reindexing.",
-          "Cut reporting endpoint response times from about 2 seconds to 300 ms through query tuning, Redis caching and HikariCP pooling, and added per-API-key rate limiting with Redis and Bucket4j.",
-          "Established team code-review standards, mentored junior developers through reviews and pair programming, and profiled JVM services with Datadog APM and JFR to remove processing inefficiencies."
+          'Designed and deployed production RAG platforms for enterprise knowledge retrieval using foundation models, pgvector or Pinecone, and LLM orchestration frameworks.',
+          'Built multi-agent workflows with LangGraph, including planner, retriever and validator agents, stateful execution, tool calling and human-in-the-loop controls.',
+          'Integrated evaluation into GitHub Actions CI with quality thresholds for answer faithfulness, relevance and citation coverage.',
+          'Implemented responsible-AI controls including prompt-injection defences, PII protection, hallucination mitigation and audit logging.',
+          'Added LLM application telemetry, model switching and cost controls, and deployed AI services on cloud infrastructure.'
         ]
       },
       {
-        title: "Associate Software Engineer",
-        company: "Jeeves Information Systems (Forterro)",
-        duration: "05/2022 - 06/2023",
+        title: 'Associate AI Engineer',
+        company: 'Jeeves Information Systems (Forterro)',
+        duration: '05/2022 - 06/2023',
         points: [
-          "Developed Spring Boot and Hibernate/JPA REST APIs backed by MySQL and PostgreSQL in a microservices environment, adding input validation, centralised exception handling and standardised API responses.",
-          "Improved backend performance through SQL query tuning, indexing and Redis caching, reducing API latency by around 30% on high-traffic endpoints.",
-          "Secured services with Spring Security and JWT, applying role-based access control for administrators, users and partners.",
-          "Wrote JUnit 5 and Mockito unit and integration tests, including Embedded Kafka tests, and resolved SonarQube and Checkmarx findings to keep quality and security checks passing.",
-          "Investigated production defects, identified root causes and shipped fixes with preventive measures; supported Docker and Kubernetes deployments through Jenkins CI/CD pipelines in Agile/Scrum teams."
+          'Developed a RAG application for answering natural-language questions over uploaded PDF and Word documents, with citation-grounded responses linking each answer to its supporting source.',
+          'Implemented document chunking, embedding and semantic-similarity retrieval using ChromaDB and FAISS vector stores.',
+          'Combined BM25 keyword retrieval with vector search and applied cross-encoder reranking to improve the relevance of retrieved chunks.',
+          'Built configurable prompt templates and structured-output parsing for LLM-generated results using OpenAI APIs.',
+          'Developed automated evaluators and an LLM-as-a-judge framework to score faithfulness and relevance of generated answers.'
         ]
       }
     ]
