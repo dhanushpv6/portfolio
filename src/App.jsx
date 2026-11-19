@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Mail, Github, MapPin, GraduationCap, Code, ChevronDown, Globe, Briefcase } from 'lucide-react';
-import Profile from "./assets/dhanush.jpeg"
+import Profile from "./assets/dhanush.png"
 
 const translations = {
   de: {
@@ -16,43 +16,44 @@ const translations = {
   hero: {
     greeting: 'Hallo, ich bin',
     title: 'Dhanush',
-    subtitle: 'Masterstudent für Artificial Intelligence und Robotik in Deutschland. Ich baue KI-Systeme, die nachweisen können, dass sie richtig liegen: LLM-/RAG-Anwendungen, Agenten und Evaluation, mit Berufserfahrung in RAG, Agenten und LLM-Evaluation.',
+    subtitle: 'Masterstudent für Artificial Intelligence und Robotik in Deutschland mit mehr als 3 Jahren Backend-Erfahrung (Java, Spring Boot). Ich baue KI-Systeme, die nachweisen können, dass sie richtig liegen: LLM-/RAG-Anwendungen, Agenten und Evaluation.',
     cta: 'Kontaktieren Sie mich'
   },
 
   about: {
     title: 'Wer bin ich?',
-    content: 'Hallo, ich bin Dhanush und studiere derzeit Artificial Intelligence und Robotik in Deutschland.\n\nMein Schwerpunkt liegt auf angewandter KI: Dokumenten-KI, Retrieval/RAG, LLM-Agenten und deren Evaluation. Dabei setze ich auf Python, FastAPI, PostgreSQL und messbare Qualität statt reiner Demos.\n\nMeine Berufserfahrung mit RAG-Systemen und LLM-Agenten hilft mir, KI-Anwendungen zuverlässig, getestet und nachvollziehbar zu bauen.',
+    content: 'Hallo, ich bin Dhanush und studiere derzeit Artificial Intelligence und Robotik in Deutschland.\n\nMein Schwerpunkt liegt auf angewandter KI: Dokumenten-KI, Retrieval/RAG, LLM-Agenten und deren Evaluation. Dabei setze ich auf Python, FastAPI, PostgreSQL und messbare Qualität statt reiner Demos.\n\nMeine Backend-Erfahrung (Java, Spring Boot, Kafka, PostgreSQL) hilft mir, KI-Anwendungen zuverlässig, getestet und nachvollziehbar zu bauen.',
     button: 'Mehr über mich'
   },
 
   experience: {
     title: 'Berufserfahrung',
-    description: 'Praxiserfahrung im Aufbau von RAG-Systemen, LLM-Agenten und Evaluations-Pipelines mit Python, FastAPI und Cloud-Plattformen.',
+    description: 'Mehr als 3 Jahre Erfahrung in der Entwicklung von Java- und Spring-Boot-Backends und ereignisgesteuerten Systemen mit Schwerpunkt auf Performance, Sicherheit und zuverlässiger Auslieferung.',
     download: 'Lebenslauf herunterladen',
     jobs: [
       {
-        title: 'Associate AI Engineer',
-        company: 'Company Name',
-        duration: 'MM/YYYY - MM/YYYY',
+        title: "Software Engineer",
+        company: "Jeeves Information Systems (Forterro)",
+        duration: "06/2023 - 01/2025",
         points: [
-          'Entwicklung einer RAG-Anwendung zur Beantwortung natürlichsprachlicher Fragen über hochgeladene PDF- und Word-Dokumente, mit quellenbasierten Antworten, die jede Aussage mit ihrer Belegstelle verknüpfen.',
-          'Umsetzung von Dokument-Chunking, Embeddings und semantischer Ähnlichkeitssuche mit den Vektorspeichern ChromaDB und FAISS.',
-          'Kombination von BM25-Keyword-Suche und Vektorsuche sowie Cross-Encoder-Reranking zur Verbesserung der Relevanz der gefundenen Abschnitte.',
-          'Entwicklung konfigurierbarer Prompt-Templates und Parsing strukturierter LLM-Ausgaben mit den OpenAI-APIs.',
-          'Entwicklung automatisierter Evaluatoren und eines LLM-as-a-Judge-Frameworks zur Bewertung von Faithfulness und Relevanz generierter Antworten.'
+          "Entwickelte Kafka-basierte Event-Ingestion-Pipelines mit Consumer-Retries und Dead-Letter-Queues, sodass fehlgeschlagene Events die Verarbeitung nicht blockieren, und verkürzte die Kunden-Einführungszeit um rund 40 %.",
+          "Definierte gRPC- und Protocol-Buffers-Verträge zwischen Spring-Boot-Services und kombinierte Kafka-Topics mit AWS SQS/SNS für zuverlässige asynchrone Kommunikation.",
+          "Konzipierte ein entkoppeltes Backend aus unabhängig deploybaren Spring-Boot-Microservices mit Eureka für Service Discovery und einem API Gateway für einheitliches Routing.",
+          "Entwickelte eine Elasticsearch-Indexierungspipeline, die mit PostgreSQL synchron gehalten wird, optimierte Analyzer, Mappings und Relevanz-Ranking und verwaltete Shards und Reindexing.",
+          "Senkte die Antwortzeiten von Reporting-Endpunkten von rund 2 Sekunden auf 300 ms durch Query-Tuning, Redis-Caching und HikariCP-Pooling und ergänzte Rate Limiting pro API-Key mit Redis und Bucket4j.",
+          "Etablierte Code-Review-Standards im Team, betreute Nachwuchsentwickler durch Reviews und Pair Programming und analysierte JVM-Services mit Datadog APM und JFR, um Verarbeitungsengpässe zu beseitigen."
         ]
       },
       {
-        title: 'AI Engineer',
-        company: 'Company Name',
-        duration: 'MM/YYYY - Heute',
+        title: "Associate Software Engineer",
+        company: "Jeeves Information Systems (Forterro)",
+        duration: "05/2022 - 06/2023",
         points: [
-          'Konzeption und Betrieb produktiver RAG-Plattformen für Enterprise-Wissenssuche mit Foundation-Modellen, pgvector oder Pinecone und LLM-Orchestrierungs-Frameworks.',
-          'Aufbau von Multi-Agenten-Workflows mit LangGraph, inklusive Planner-, Retriever- und Validator-Agenten, Zustandsverwaltung, Tool Calling und Human-in-the-Loop-Kontrollen.',
-          'Integration der Evaluation in die GitHub-Actions-CI mit Qualitätsschwellen für Faithfulness, Relevanz und Zitatabdeckung.',
-          'Umsetzung von Responsible-AI-Kontrollen: Schutz vor Prompt Injection, PII-Schutz, Halluzinationsminderung und Audit-Logging.',
-          'Einführung von LLM-Telemetrie, Modellwechsel und Kostenkontrolle sowie Deployment von KI-Diensten in der Cloud.'
+          "Entwickelte REST-APIs mit Spring Boot und Hibernate/JPA auf Basis von MySQL und PostgreSQL in einer Microservices-Umgebung und ergänzte Eingabevalidierung, zentrale Fehlerbehandlung und standardisierte API-Antworten.",
+          "Verbesserte die Backend-Performance durch SQL-Query-Tuning, Indizierung und Redis-Caching und reduzierte die API-Latenz bei stark genutzten Endpunkten um rund 30 %.",
+          "Sicherte Services mit Spring Security und JWT ab und setzte rollenbasierte Zugriffskontrolle für Administratoren, Benutzer und Partner um.",
+          "Schrieb Unit- und Integrationstests mit JUnit 5 und Mockito, einschließlich Embedded-Kafka-Tests, und behob SonarQube- und Checkmarx-Findings, um Qualitäts- und Sicherheitsprüfungen stabil zu bestehen.",
+          "Analysierte Produktionsfehler, identifizierte Ursachen und lieferte Korrekturen mit Präventionsmaßnahmen; unterstützte Docker- und Kubernetes-Deployments über Jenkins-CI/CD-Pipelines in agilen Scrum-Teams."
         ]
       }
     ]
@@ -63,7 +64,7 @@ const translations = {
     items: [
       {
         university: 'Hochschule Hof, University of Applied Sciences',
-        year: '2024 - Heute',
+        year: '2026 - 2028',
         degree: 'Master in Artificial Intelligence und Robotik'
       },
       {
@@ -76,9 +77,12 @@ const translations = {
 
   projects: {
     title: 'Ausgewählte KI-Projekte',
+    viewCode: 'Auf GitHub ansehen',
+    allRepos: 'Alle Repositories ansehen',
     items: [
       {
         title: 'E-Invoice Copilot',
+        url: 'https://github.com/dhanushpv6/E-invoice-copilot',
         description: 'Wandelt PDF-Rechnungen in standardkonforme E-Rechnungen um und erklärt jeden Validierungsfehler. Pipeline: OCR, LLM-Extraktion in ein Pydantic-Schema (EN-16931-Datenmodell), XML-Erzeugung, Validierung mit dem Open-Source-KoSIT-Validator und eine Human-Review-Queue für Ergebnisse mit niedriger Konfidenz. Geplante Evaluation: gelabeltes Rechnungsset mit Schwierigkeitsfällen, Feld-Precision/-Recall und Kosten pro Dokument.',
         stack: ['Python', 'FastAPI', 'PostgreSQL', 'Tesseract / PaddleOCR', 'LLM Structured Output', 'Pydantic', 'lxml', 'KoSIT Validator', 'Docker', 'pytest', 'GitHub Actions'],
         points: [
@@ -91,6 +95,7 @@ const translations = {
       },
       {
         title: 'Version-Aware Docs Assistant',
+        url: 'https://github.com/dhanushpv6/Version-Aware-Docs-Assistant',
         description: 'Ein Dokumentationsassistent, der für die tatsächlich genutzte Softwareversion antwortet und Änderungen zwischen Versionen zusammenfasst. Hybride Suche (Keyword + Vektor) mit Versionsfilter, Reranking, Antworten mit Quellenangaben (Dokument, Abschnitt, Version) und „Ich weiß es nicht“ bei fehlender Evidenz. Evaluation mit handgeschriebenen, versionsabhängigen Fragen: Recall@k, MRR, Zitiergenauigkeit und Versionsfehlerrate.',
         stack: ['Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'Full-Text Search', 'Embeddings', 'Reranker', 'RAGAS', 'React', 'TypeScript'],
         points: [
@@ -102,6 +107,7 @@ const translations = {
       },
       {
         title: 'Verified-RCA',
+        url: 'https://github.com/dhanushpv6/Verified-RCA',
         description: 'Ein Incident-Investigation-Agent, der keine Aussage treffen darf, die er nicht belegen kann: Jede Behauptung im Bericht ist an eine Evidenz-Abfrage gebunden, die ein separater Verifier erneut ausführt. Fehlerszenarien nach öffentlichen Postmortems, Fault Injection, eingefrorene Telemetrie-Bundles für deterministische Offline-Benchmarks, Abstention („unzureichende Evidenz“) und Tests gegen Prompt Injection in Logs. Fixes werden nur vorgeschlagen und benötigen menschliche Freigabe.',
         stack: ['Python', 'LLM Agents', 'OpenTelemetry', 'Prometheus', 'Loki', 'Tempo', 'Docker Compose', 'Pydantic', 'pytest'],
         points: [
@@ -114,6 +120,7 @@ const translations = {
       },
       {
         title: 'llm-replay',
+        url: 'https://github.com/dhanushpv6/llm-replay',
         description: 'Ein kleines Open-Source-pytest-Plugin, das LLM- und Tool-Aufrufe aufzeichnet und deterministisch wiedergibt, sodass KI-Anwendungen Regressionstests ohne API-Kosten bei jedem Lauf erhalten. Version 0.1: Record/Replay für einen HTTP-Client, Scrubbing von Secrets und personenbezogenen Daten sowie Assertions auf Tool-Call-Reihenfolge und Kosten-/Latenzbudgets.',
         stack: ['Python', 'pytest Plugin API', 'httpx', 'Pydantic', 'MkDocs', 'GitHub Actions'],
         points: [
@@ -148,43 +155,44 @@ const translations = {
   hero: {
     greeting: 'Hello, I am',
     title: 'Dhanush',
-    subtitle: 'Master’s student in Artificial Intelligence and Robotics in Germany. I build AI systems that can prove they’re right: LLM and RAG applications, agents and evaluation, with professional experience in RAG, agents and LLM evaluation.',
+    subtitle: 'Master’s student in Artificial Intelligence and Robotics in Germany with 3+ years of backend engineering experience (Java, Spring Boot). I build AI systems that can prove they’re right: LLM and RAG applications, agents and evaluation.',
     cta: 'Contact Me'
   },
 
   about: {
     title: 'Who am I?',
-    content: 'Hi, I’m Dhanush, currently pursuing a Master’s in Artificial Intelligence and Robotics in Germany.\n\nMy focus is applied AI: document AI, retrieval and RAG, LLM agents and their evaluation, built with Python, FastAPI and PostgreSQL, with measured quality rather than just demos.\n\nMy professional experience with RAG systems and LLM agents helps me build AI applications that are reliable, tested and traceable.',
+    content: 'Hi, I’m Dhanush, currently pursuing a Master’s in Artificial Intelligence and Robotics in Germany.\n\nMy focus is applied AI: document AI, retrieval and RAG, LLM agents and their evaluation, built with Python, FastAPI and PostgreSQL, with measured quality rather than just demos.\n\nMy backend engineering background (Java, Spring Boot, Kafka, PostgreSQL) helps me build AI applications that are reliable, tested and traceable.',
     button: 'More About Me'
   },
 
   experience: {
     title: 'Professional Experience',
-    description: 'Hands-on experience building RAG systems, LLM agents and evaluation pipelines with Python, FastAPI and cloud platforms.',
+    description: '3+ years of experience building Java and Spring Boot backends and event-driven systems, with a focus on performance, security and reliable delivery.',
     download: 'Download Resume',
     jobs: [
       {
-        title: 'Associate AI Engineer',
-        company: 'Company Name',
-        duration: 'MM/YYYY - MM/YYYY',
+        title: "Software Engineer",
+        company: "Jeeves Information Systems (Forterro)",
+        duration: "06/2023 - 01/2025",
         points: [
-          'Developed a RAG application for answering natural-language questions over uploaded PDF and Word documents, with citation-grounded responses linking each answer to its supporting source.',
-          'Implemented document chunking, embedding and semantic-similarity retrieval using ChromaDB and FAISS vector stores.',
-          'Combined BM25 keyword retrieval with vector search and applied cross-encoder reranking to improve the relevance of retrieved chunks.',
-          'Built configurable prompt templates and structured-output parsing for LLM-generated results using OpenAI APIs.',
-          'Developed automated evaluators and an LLM-as-a-judge framework to score faithfulness and relevance of generated answers.'
+          "Built Kafka-based event ingestion pipelines with consumer retries and dead-letter queues so failed events never block processing, reducing client onboarding time by roughly 40%.",
+          "Defined gRPC and Protocol Buffers contracts between Spring Boot services, combining Kafka topics with AWS SQS/SNS for reliable asynchronous communication.",
+          "Designed a decoupled backend of independently deployable Spring Boot microservices, using Eureka for service discovery and an API Gateway for unified routing.",
+          "Built an Elasticsearch indexing pipeline synchronised with PostgreSQL, tuning analyzers, mappings and relevance ranking and handling shards and reindexing.",
+          "Cut reporting endpoint response times from about 2 seconds to 300 ms through query tuning, Redis caching and HikariCP pooling, and added per-API-key rate limiting with Redis and Bucket4j.",
+          "Established team code-review standards, mentored junior developers through reviews and pair programming, and profiled JVM services with Datadog APM and JFR to remove processing inefficiencies."
         ]
       },
       {
-        title: 'AI Engineer',
-        company: 'Company Name',
-        duration: 'MM/YYYY - Present',
+        title: "Associate Software Engineer",
+        company: "Jeeves Information Systems (Forterro)",
+        duration: "05/2022 - 06/2023",
         points: [
-          'Designed and deployed production RAG platforms for enterprise knowledge retrieval using foundation models, pgvector or Pinecone, and LLM orchestration frameworks.',
-          'Built multi-agent workflows with LangGraph, including planner, retriever and validator agents, stateful execution, tool calling and human-in-the-loop controls.',
-          'Integrated evaluation into GitHub Actions CI with quality thresholds for answer faithfulness, relevance and citation coverage.',
-          'Implemented responsible-AI controls including prompt-injection defences, PII protection, hallucination mitigation and audit logging.',
-          'Added LLM application telemetry, model switching and cost controls, and deployed AI services on cloud infrastructure.'
+          "Developed Spring Boot and Hibernate/JPA REST APIs backed by MySQL and PostgreSQL in a microservices environment, adding input validation, centralised exception handling and standardised API responses.",
+          "Improved backend performance through SQL query tuning, indexing and Redis caching, reducing API latency by around 30% on high-traffic endpoints.",
+          "Secured services with Spring Security and JWT, applying role-based access control for administrators, users and partners.",
+          "Wrote JUnit 5 and Mockito unit and integration tests, including Embedded Kafka tests, and resolved SonarQube and Checkmarx findings to keep quality and security checks passing.",
+          "Investigated production defects, identified root causes and shipped fixes with preventive measures; supported Docker and Kubernetes deployments through Jenkins CI/CD pipelines in Agile/Scrum teams."
         ]
       }
     ]
@@ -195,7 +203,7 @@ const translations = {
     items: [
       {
         university: 'Hochschule Hof, University of Applied Sciences',
-        year: '2024 - Present',
+        year: '2026 - 2028',
         degree: 'Master’s in Artificial Intelligence and Robotics'
       },
       {
@@ -208,9 +216,12 @@ const translations = {
 
   projects: {
     title: 'Selected AI Projects',
+    viewCode: 'View on GitHub',
+    allRepos: 'View all repositories',
     items: [
       {
         title: 'E-Invoice Copilot',
+        url: 'https://github.com/dhanushpv6/E-invoice-copilot',
         description: 'Converts PDF invoices into standards-conformant e-invoices and explains every validation error. Pipeline: OCR, LLM extraction into a Pydantic schema mapped to the EN 16931 data model, XML generation, validation with the open-source KoSIT validator, and a human review queue for low-confidence results. Planned evaluation: a labelled invoice set with hard cases, field-level precision and recall, and cost per document.',
         stack: ['Python', 'FastAPI', 'PostgreSQL', 'Tesseract / PaddleOCR', 'LLM Structured Output', 'Pydantic', 'lxml', 'KoSIT Validator', 'Docker', 'pytest', 'GitHub Actions'],
         points: [
@@ -223,6 +234,7 @@ const translations = {
       },
       {
         title: 'Version-Aware Docs Assistant',
+        url: 'https://github.com/dhanushpv6/Version-Aware-Docs-Assistant',
         description: 'A documentation assistant that answers for the software version you actually use and summarises what changed between versions. Hybrid search (keyword plus vector) with version filtering, reranking, citations showing document, section and version, and an explicit "I don\u2019t know" when evidence is missing. Evaluated on hand-written, version-dependent questions: Recall@k, MRR, citation correctness and version-error rate.',
         stack: ['Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'Full-Text Search', 'Embeddings', 'Reranker', 'RAGAS', 'React', 'TypeScript'],
         points: [
@@ -234,6 +246,7 @@ const translations = {
       },
       {
         title: 'Verified-RCA',
+        url: 'https://github.com/dhanushpv6/Verified-RCA',
         description: 'An incident-investigation agent that is not allowed to make a claim it cannot prove: every statement in its report is backed by an evidence query that a separate verifier re-runs. Includes failure scenarios modelled on public postmortems, fault injection, frozen telemetry bundles for deterministic offline benchmarks, abstention ("insufficient evidence"), and prompt-injection tests with instructions planted in logs. Fixes are only proposed and need human approval.',
         stack: ['Python', 'LLM Agents', 'OpenTelemetry', 'Prometheus', 'Loki', 'Tempo', 'Docker Compose', 'Pydantic', 'pytest'],
         points: [
@@ -246,6 +259,7 @@ const translations = {
       },
       {
         title: 'llm-replay',
+        url: 'https://github.com/dhanushpv6/llm-replay',
         description: 'A small open-source pytest plugin that records LLM and tool calls from a test run and replays them deterministically, so AI applications get regression tests without paying for API calls on every run. Version 0.1: record and replay for one HTTP client, secret and personal-data scrubbing, and assertions on tool-call order and cost or latency budgets.',
         stack: ['Python', 'pytest Plugin API', 'httpx', 'Pydantic', 'MkDocs', 'GitHub Actions'],
         points: [
@@ -438,7 +452,7 @@ export default function Portfolio() {
                   {t.hero.cta}
                 </a>
                 <a
-                  href="https://github.com/Dhanush-pv"
+                  href="https://github.com/dhanushpv6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 border-2 border-gray-300 text-gray-900 rounded-full font-medium hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
@@ -451,7 +465,7 @@ export default function Portfolio() {
                 className="flex gap-4 mt-8"
               >
                 <a
-                  href="https://github.com/Dhanush-pv"
+                  href="https://github.com/dhanushpv6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-gray-100 hover:bg-blue-100 rounded-full transition-all duration-300 hover:scale-110"
@@ -610,7 +624,7 @@ export default function Portfolio() {
               className="mt-12 flex gap-4"
             >
               <a
-                href="https://drive.google.com/file/d/1yCURBN3cfzdoSf3cCkwjB_JDH1WU1rkN/view?usp=sharing"
+                href="https://drive.google.com/file/d/1nU3Y3i61L3K-Qn86Oauj_DRYAWHiYkF2/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105"
@@ -701,6 +715,17 @@ export default function Portfolio() {
                       ))}
                     </ul>
                   )}
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mb-5 text-sm font-medium text-blue-600 hover:text-blue-700"
+                    >
+                      <Github size={16} />
+                      {t.projects.viewCode}
+                    </a>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {project.stack.map((technology) => (
                       <span
@@ -713,6 +738,17 @@ export default function Portfolio() {
                   </div>
                 </motion.div>
               ))}
+            </div>
+            <div className="text-center mt-12">
+              <a
+                href="https://github.com/dhanushpv6?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+              >
+                <Github size={18} />
+                {t.projects.allRepos}
+              </a>
             </div>
           </motion.div>
         </div>
@@ -841,7 +877,7 @@ export default function Portfolio() {
 
             <div className="flex gap-4">
               <a
-                href="https://github.com/Dhanush-pv"
+                href="https://github.com/dhanushpv6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white hover:bg-blue-50 rounded-full transition-all duration-300 hover:scale-110 shadow-sm"
@@ -864,7 +900,7 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm"
           >
-            <p>© 2025 Dhanush Palani Vijay Kumari. {language === 'de' ? 'Alle Rechte vorbehalten.' : 'All rights reserved.'}</p>
+            <p>© 2026 Dhanush Palani Vijay Kumari. {language === 'de' ? 'Alle Rechte vorbehalten.' : 'All rights reserved.'}</p>
           </motion.div>
         </div>
       </footer>
