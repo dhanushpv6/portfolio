@@ -36,11 +36,10 @@ const translations = {
         company: 'Jeeves Information Systems (Forterro)',
         duration: '06/2023 - 01/2025',
         points: [
-          'Konzeption und Betrieb produktiver RAG-Plattformen für Enterprise-Wissenssuche mit Foundation-Modellen, pgvector oder Pinecone und LLM-Orchestrierungs-Frameworks.',
-          'Aufbau von Multi-Agenten-Workflows mit LangGraph, inklusive Planner-, Retriever- und Validator-Agenten, Zustandsverwaltung, Tool Calling und Human-in-the-Loop-Kontrollen.',
-          'Integration der Evaluation in die GitHub-Actions-CI mit Qualitätsschwellen für Faithfulness, Relevanz und Zitatabdeckung.',
-          'Umsetzung von Responsible-AI-Kontrollen: Schutz vor Prompt Injection, PII-Schutz, Halluzinationsminderung und Audit-Logging.',
-          'Einführung von LLM-Telemetrie, Modellwechsel und Kostenkontrolle sowie Deployment von KI-Diensten in der Cloud.'
+          'Zustandsbehafteten 7-stufigen LangGraph-Workflow für die Migration von Legacy-Berichten entwickelt. Er schloss 85-90 % der Umstellungen von Crystal Reports auf JasperReports automatisch ab und übergab den Rest an die manuelle Prüfung. Bei über 800 Berichten für mehr als 8 Unternehmenskunden sank die Umstellungszeit von 60-90 auf 15-20 Minuten, über 500 Stunden eingespart.',
+  'Success-Handling-Agent zwischen MME und SAP entwickelt. RBAC und WBS-basiertes Locking verhinderten, dass gleichzeitige Updates sich gegenseitig überschreiben, und Datenkonsistenz-Vorfälle sanken auf null.',
+  'Eine produktive Agentic-Codebasis von einem proprietären SDK auf LangGraph migriert. Einen monolithischen Agenten in entkoppelte Request-/Response-Agenten aufgeteilt, mit auf GCP persistiertem Zustand, was parallele Workflows und erstmals vollständige Nachvollziehbarkeit ermöglichte. Die Skalierbarkeit verbesserte sich um 40 %.',
+  'LLM-Pipeline zur SKU-Extraktion verbessert. Durch Umstrukturierung von Prompts und Abfragen stieg die Genauigkeit um 25 %, und Berichte zu den Kosten pro Anfrage gaben dem Kunden klare Transparenz über den ROI.',
         ]
       },
       {
@@ -48,11 +47,9 @@ const translations = {
         company: 'Jeeves Information Systems (Forterro)',
         duration: '05/2022 - 06/2023',
         points: [
-          'Entwicklung einer RAG-Anwendung zur Beantwortung natürlichsprachlicher Fragen über hochgeladene PDF- und Word-Dokumente, mit quellenbasierten Antworten, die jede Aussage mit ihrer Belegstelle verknüpfen.',
-          'Umsetzung von Dokument-Chunking, Embeddings und semantischer Ähnlichkeitssuche mit den Vektorspeichern ChromaDB und FAISS.',
-          'Kombination von BM25-Keyword-Suche und Vektorsuche sowie Cross-Encoder-Reranking zur Verbesserung der Relevanz der gefundenen Abschnitte.',
-          'Entwicklung konfigurierbarer Prompt-Templates und Parsing strukturierter LLM-Ausgaben mit den OpenAI-APIs.',
-          'Entwicklung automatisierter Evaluatoren und eines LLM-as-a-Judge-Frameworks zur Bewertung von Faithfulness und Relevanz generierter Antworten.'
+          'Computer-Vision-basiertes Inventarsystem entwickelt. Barcode-Aufkleber dienten per OCR als eindeutige Kennungen, und ML-Modelle haben Länge, Breite und Dicke jedes Produkts aus Bildern gemessen. Die Daten wurden in einer Datenbank gespeichert und für Bestandsplanung, Flächenoptimierung und Bedarfsprognosen genutzt.',
+  'Dateneingabe mit OCR und AutoHotkey automatisiert. Gescannte Dokumente wurden in digitale Datensätze umgewandelt und automatisch in Desktop-Anwendungen eingetragen, was manuelles Tippen und Eingabefehler reduzierte.',
+  'Vision-Modelle zur Erkennung von Regalverstößen im Einzelhandel trainiert. Über 5.000 Kühlschrankbilder annotiert und TensorFlow- und OpenCV-Modelle gebaut, die Compliance-Scores mit über 90 % Validierungsgenauigkeit lieferten.',
         ]
       }
     ]
@@ -174,11 +171,10 @@ const translations = {
         company: 'Jeeves Information Systems (Forterro)',
         duration: '06/2023 - 01/2025',
         points: [
-          'Designed and deployed production RAG platforms for enterprise knowledge retrieval using foundation models, pgvector or Pinecone, and LLM orchestration frameworks.',
-          'Built multi-agent workflows with LangGraph, including planner, retriever and validator agents, stateful execution, tool calling and human-in-the-loop controls.',
-          'Integrated evaluation into GitHub Actions CI with quality thresholds for answer faithfulness, relevance and citation coverage.',
-          'Implemented responsible-AI controls including prompt-injection defences, PII protection, hallucination mitigation and audit logging.',
-          'Added LLM application telemetry, model switching and cost controls, and deployed AI services on cloud infrastructure.'
+           'Built a stateful 7-stage LangGraph workflow for legacy report migration. It auto-completed 85-90% of Crystal Reports to JasperReports conversions and escalated the rest to human review. Across 800+ reports for 8+ enterprise clients, conversion time fell from 60-90 to 15-20 minutes, saving 500+ hours.',
+  'Built a Success Handling Agent between MME and SAP. RBAC and WBS-based locking stopped concurrent updates from overwriting each other, and data-consistency incidents dropped to zero.',
+  'Migrated a production agentic codebase from a proprietary SDK to LangGraph. I split a monolithic agent into decoupled Request/Response agents with state persisted on GCP, enabling parallel workflows and full auditability. Scalability improved by 40%.',
+  'Improved an LLM SKU extraction pipeline. Prompt and query restructuring raised accuracy by 25%, and cost-per-query reports gave the client clear ROI visibility.',
         ]
       },
       {
@@ -186,11 +182,9 @@ const translations = {
         company: 'Jeeves Information Systems (Forterro)',
         duration: '05/2022 - 06/2023',
         points: [
-          'Developed a RAG application for answering natural-language questions over uploaded PDF and Word documents, with citation-grounded responses linking each answer to its supporting source.',
-          'Implemented document chunking, embedding and semantic-similarity retrieval using ChromaDB and FAISS vector stores.',
-          'Combined BM25 keyword retrieval with vector search and applied cross-encoder reranking to improve the relevance of retrieved chunks.',
-          'Built configurable prompt templates and structured-output parsing for LLM-generated results using OpenAI APIs.',
-          'Developed automated evaluators and an LLM-as-a-judge framework to score faithfulness and relevance of generated answers.'
+          'Built a computer-vision inventory system. Barcode stickers served as unique IDs through OCR, and ML measured each product\'s length, breadth, and thickness from images. The data went into a database for stock planning, space optimization, and demand forecasting.',
+  'Automated data entry with OCR and AutoHotkey. Scanned documents were converted into digital records and keyed into desktop applications automatically, cutting manual typing and entry errors.',
+  'Trained vision models to flag retail shelf violations. I annotated 5,000+ refrigerator images and built TensorFlow and OpenCV models that produced compliance scores with 90%+ validation accuracy.',
         ]
       }
     ]
@@ -622,7 +616,7 @@ export default function Portfolio() {
               className="mt-12 flex gap-4"
             >
               <a
-                href="https://drive.google.com/file/d/1nU3Y3i61L3K-Qn86Oauj_DRYAWHiYkF2/view?usp=sharing"
+                href="https://drive.google.com/file/d/14tcIjgE2pC3w5EpELCJsaGr_I-W17OxC/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105"
